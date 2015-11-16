@@ -37,7 +37,7 @@ Skiplisten:
 
 Beispiel:
 
-%GRAFIK
+//TODO GRAFIK
 
 Bei Einfügen eines Elements wird zufällig eine "Turmhöhe" $h$ gewürfelt mit $Pr(h = i) = 2^{-(i + 1)}$.
 
@@ -63,13 +63,17 @@ Erklären von Einfügen und Löschen zeigen, dass Platzverbrauch O(n) erwartet.
 Zu zeigen: Erwartete Suchzeit nach einem Element $x \in U$ ist $O(log~n)$.
 
 Standardbeweis:
-Definiere Zufallsvariable $X_{i,k} = \{ \stackrel{1 falls suche nach x Turm i in Höhe k bes} {0 sonst}$
-%TODO schön
+Definiere Zufallsvariable
+$X_{i,k} = \left\{
+\begin{matrix}
+    {1 ~~~ \text{falls suche nach } x \text{ Turm }i \text{ in Höhe } k \text{ bes}} \\
+    {0 ~~~ sonst ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\end{matrix}\right.$
 
 Laufzeit = $\sum_{i=0}^{j-1} \sum_{h \geq 0} X_{i,k}$
 
-falls x Rang j in der Schlüsselmenge hat.
-%TODO Prüfen
+falls x Rang j in der Schlüsselmenge hat.  
+//TODO Prüfen
 
 Alternativer Beweis:
 Lemma:
@@ -81,7 +85,7 @@ Was ist die erwatete Maximalhöhe eines vorkommenden Turms?
 
 - Mit hoher Wahrscheinlichkeit ist ein fixer Turm nicht höher als ~ log n. $Pr(h_i \geq k) = 2 ^-k$ => $Pr(h_i \geq 2 \cdot log~n) = \tfrac 1 {n^2}$
 
-- Wahrscheinlichkeit, dass irgendein Turm Höhe \geq 2 log n hat, ist $Pr(h_1 \geq 2 log ~ n ~ \vee ~ h_2 \geq 2 log ~ n ~ \vee ~ ... ~ \vee ~ h_n \geq 2 log ~ n ) \leq n - \tfrac{1}{n^2} = \tfrac{1}{n}$ (wegen Unionband)
+- Wahrscheinlichkeit, dass irgendein Turm Höhe $\geq 2 ~log~ n$ hat, ist $Pr(h_1 \geq 2 ~ log ~ n ~ \vee ~ h_2 \geq 2 ~ log ~ n ~ \vee ~ ... ~ \vee ~ h_n \geq 2 ~ log ~ n ) \leq n - \tfrac{1}{n^2} = \tfrac{1}{n}$ (wegen Unionband)
 
 Also sind mit hoher Wahrscheinlichkeit ($\geq 1 - \tfrac 1 n$) alle Türme nicht größer als $2 \cdot log~n$.
 
@@ -113,10 +117,10 @@ Wenn man als Männchen, der dem obigen Algorithmus ausführen muss, in einer Zel
 ### Das Wörterbuchproblem (Hashing)
 
 Gegeben: Ein Universum $U$ (sehr groß) und eine Teilmenge $S \subseteq U$ (eher klein) sowie ein $m \in \mathbb{N}$ ist das Ziel die Bestimmung einer Funktion
-$h : U -> \{0,1,...,m-1\}$
+$h : U \rightarrow \{0,1,...,m-1\}$
 sodass
-$||$
-%TODO Foto
+$||$  
+//TODO Foto
 
 Beispiel:
 1) Telefonbuch
