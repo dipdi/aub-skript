@@ -54,5 +54,5 @@ pandoc -o "AuB-Skript Stand `date +%d.%m.%Y`.pdf" Vorlesung*.md
 ```  
 oder
 ```sh
-pandoc -o "AuB-Skript.pdf" Vorlesung*.md`
+pandoc -o "AuB-Skript.pdf" Vorlesung*.md
 ```

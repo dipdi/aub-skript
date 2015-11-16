@@ -1,8 +1,10 @@
+## Hinweise
+
+Fehlende Stellen / Fehler / Unklarheiten sind mit //TODO markiert. Helfe mit diese Stellen zu verbessern, forke das Repo oder schreibe Issues!
+
 ## 1. Vorlesung
 
-## Hinweise
-Fehlende  sind mit //TODO markiert.
-## Randomisierte Algorithmen
+### Randomisierte Algorithmen
 Vergleich mit Kochrezept, manchmal zufällig 1 oder 2 Prisen Salz.
 Abgrenzung zu deterministischen Algorithmen.
 
@@ -18,7 +20,7 @@ Typischerweise analysiert man Algorithmen bzgl. Platz und Zeitbedarf, RA kann ma
 ### Problem, Closest Pair
 Gegeben: $n$ Punkte in $\mathbb{R}^2$
 
-%%TODO Bild einfügen
+//TODO Bild einfügen
 
 Gesucht: $P1, P2 \in$ P mit $|p_1 p_1 |$ minimal
 
@@ -66,7 +68,7 @@ Sei $\delta_i$ die CP-Distanz der Punktmenge $\{p_1, p_2, ..., p_i\}$.
 Angenommen mit $\delta_i$, wie
 
 
-_%TODO TEXTFEHLT_
+//TODO TEXTFEHLT
 
 Naiv: Vergleiche $p_{i+1}$ mit $p_1$, $p_2$, ... $p_i$
 und setze $\delta_i = min(\delta_i, min (p_{i+1} p_{\delta})$)

@@ -152,8 +152,8 @@ $\leq 1 + \# y \in S$ mit $h(x) = h(y)$
 
 Definiere
 $\delta_h (x,y) = \left\{ \begin{matrix}
-  {{1 ~~~ \text{falls } h(x)=h(y)} \\
-  {0 ~~~ \text{sonst} ~~~~~~~~~~~~~~~~~~~}}
+  {1 ~~~ \text{falls } h(x)=h(y)} \\
+  {0 ~~~ \text{sonst} ~~~~~~~~~~~~~~~~~~~}
 \end{matrix}\right.$
 
 ##### Uns interessiert:

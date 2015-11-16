@@ -1,4 +1,3 @@
----
 ## 5. Vorlesung
 
 Bis jetzt: Randomisierte Algorithmen

@@ -1,17 +1,19 @@
----
-
 ## Vorlesung 6
 
 ### Das Wörterbuchproblem
-Gegeben:
-Universum $U$ (sehr groß)
-Teilmenge $S \subseteq U$ (mittelgroß) $|S|=n$
+
+Gegeben:  
+Universum $U$ (sehr groß)  
+Teilmenge $S \subseteq U$ (mittelgroß) $|S|=n$  
 $m \in \mathbb{N}$
+
 Ziel: Finde
-$h:U \rightarrow {O,...,...,m-1}$
-sodass
-\[\forall = \leq i < m: |{x\in S | h(x) = i}| \leq \tfrac{n}{m}\]
+$h: U \rightarrow \{O, ..., m-1\}$ sodass
+
+$\forall = \leq i < m: |\{x\in S | h(x) = i\}| \leq \tfrac{n}{m}$
+
 ---
+
 Bspw:
 $U=\mathbb{N}$  
 $S={1,77,23,99} ~~(n=4)$  
@@ -24,7 +26,7 @@ $h(23)=3$
 $h(99)=4$  
 
 Gleiche Hachfunktion für:
-\[ S ={12,22,17,32,52} \]
+$S ={12,22,17,32,52}$
 
 Anwendungsbeispiele:
 1) Telefonbuch:  
@@ -33,7 +35,7 @@ $U \widehat{=}$ Menge aller Zahlen die irgendeine Name und Vorname Kombination e
 $S \subseteq U~\widehat{=}$ Name und Vorname in Stuttgart $|n|= 500000$  
 Wähle $m=500000$  
 Könnten wir eine Hashfunktion $h:U\rightarrow {0,...,m-1}$ abbildet mit:
-\[\forall 0 \leq i < m:   |{x\in S | h(x) = i}|\leq \tfrac{n}{m}=1 \]
+$\forall 0 \leq i < m: ~~|{x\in S | h(x) = i}|\leq \tfrac{n}{m}=1$
 > Das ist toll
 Wir können ein Array anlegen mit 500000 Einträgen. Die Telnr. einer "Name und Vorname" speichern wir an Position h(Name und Vorname), des Arrays.
 
@@ -98,9 +100,9 @@ garantiert.
 > **Achtung:** er mixt Schlüssel und Item
 
 Idealierweise hätten wir gerne für ein gegebenes  
-\[S \subseteq U = {0,...,2^64-1}, |S|=n \]
+$S \subseteq U = {0,...,2^64-1}, |S|=n$
 eine hashfunktion $h$, welches $S$ injektiv auf {0,...,n-1} abildet, d.h.
-\[ \forall x,y \in S~:~h(x)\neq h(y) \]
+$\forall x,y \in S~:~h(x)\neq h(y)$
 Mit einem solchen h könnten wir $S$ wie folgt verwalten:  
 - lege Array mit n Einträgen für die Items an
 - Item mit Schlüssel $x$ wird an Position $h(x)$ gespeichert ( an keiner Stelle wird mehr als 1 Item gespeichert)
@@ -124,7 +126,7 @@ Idealierweise $C^{h}_{x}(S)\leq1$ ($\Rightarrow$ h injektiv für S)
 Falls $t<|S|$, hätte man gerne $|C^{h}_{x}(S)$
 
 **Frage: Gibt es eine Superhashfunktion** $h^*$, welche für jedes $S \subseteq U$ garantiert, dass
-\[|C^{h}_{x}(S)| \leq \tfrac{\lceil|S|\rceil}{t}~~~~?\]
+$|C^{h}_{x}(S)| \leq \tfrac{\lceil|S|\rceil}{t}~~~~?$
 
 **Bsp:** $U= \mathbb{N}$  
 $S={20,13,6,18,28,31}, t=5$  
@@ -139,7 +141,7 @@ Für $S={16,5,1,26,31,13}$ ist dieses Katastrophal.
 Dann gibt es für alle n mit $1 \leq n \leq \tfrac{K}{t}$  
 ein $S \leq U$ mit $|S| = n$
 
-\[ \text{ Schreibe auch } S \in (^K_n)~~~~~~(^{70}_{12}) \]
+Schreibe auch $S \in (^K_n)~~~~~~(^{70}_{12})$
 
 mit $|C^{h}_{x}(S)|=n ~~~\forall x \in S$, d.h. alle Elemente aus $S$ werden in den gleichen Hashtafeleintrag gehasht.
 
@@ -147,7 +149,7 @@ mit $|C^{h}_{x}(S)|=n ~~~\forall x \in S$, d.h. alle Elemente aus $S$ werden in 
 
 **Beweis:**   
 Nach Schubfachprinzip existiert ein i  
-\[ 0 \leq i < t \text{ sodass } (h^{-1}(i)) \geq \tfrac{|U|}{t} \]
+$0 \leq i < t \text{ sodass } (h^{-1}(i)) \geq \tfrac{|U|}{t}$
 > ${x \in U| h(1)= i}$
 
 $\Rightarrow \tfrac{|U|}{t} = \tfrac{K}{t} \geq n$. Wähle $S$ aus $(^{h^{-1}(i)}_n)$
