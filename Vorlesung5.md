@@ -22,15 +22,15 @@ Baue Datenstruktur für $S$, sodass man effiziernt
 Naiv:
 Sortierte Liste:
 - Suchzeit: ~$n$
-- $O(1)$ falls Position bekannt, sonst $O(n)$ für Einfügen
+- $\mathcal{O}(1)$ falls Position bekannt, sonst $\mathcal{O}(n)$ für Einfügen
 - dito für Löschen
-Platz: $O(n)$
+Platz: $\mathcal{O}(n)$
 
 Besser:
 (2,3,4)-Baum:
-- Platz: $O(n)$
-- Suchzeit: $O(log~n)$
-- Einfügen / Löschen: $O(log~n)$
+- Platz: $\mathcal{O}(n)$
+- Suchzeit: $\mathcal{O}(log~n)$
+- Einfügen / Löschen: $\mathcal{O}(log~n)$
 
 C'T:
 Skiplisten:
