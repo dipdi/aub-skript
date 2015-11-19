@@ -4,7 +4,9 @@ Bis jetzt: Randomisierte Algorithmen
 
 Jetzt: Randomisierte Datenstruktur
 Skiplisten - eine randomisierte Alternative zu (2, 4)-, AVL-, Rot-Schwarz-, ... Bäumen
+
 ---
+
 ### Skiplisten
 
 Gegeben:

@@ -69,8 +69,9 @@ Diese sollte folgende Operationen unterstützen:
 **Naive Implementierungen**
 1) Array/Feld für die Items, Zähler für Anzahl Items in $S$
 
-|$i_0 = (K_0, inf_0)$|$i_1= (K_1, inf_1)$|...|$i_{n-1}$|
-|-|-|-|-|
+| $0$ | $1$ | ... | $n-1$ |
+|---|---|---|---|
+| $i_0 = (K_0, inf_0)$ | $i_1= (K_1, inf_1)$ | ... | $i_{n-1}= (K_{n-1}, inf_{n-1})$ |
 
 - insert($x,S$) ... Überprüfe ob Schlüssel von $x$ schon enthalten, falls ja überschreiben des entschprechenden items, falls nein, Item hinten anhängen & Zähler eins erhöhen  
 - delete($x,S$) ... item finden, austausch mit letztem Item, Zähler eins runter  
