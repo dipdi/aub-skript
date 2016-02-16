@@ -8,9 +8,9 @@ Teilmenge $S \subseteq U$ (mittelgroß) $|S|=n$
 $m \in \mathbb{N}$
 
 Ziel: Finde
-$h: U \rightarrow \{O, ..., m-1\}$ sodass
+$h: U \rightarrow \{0, 1, ..., m-1\}$ sodass
 
-$\forall = \leq i < m: |\{x\in S | h(x) = i\}| \leq \tfrac{n}{m}$
+$\forall ~ 0 \leq i < m: ~ \Big| \{ x \in S ~|~ h(x) = i \} \Big| \leq \lfloor \tfrac {n} {m} \rfloor$
 
 ---
 
@@ -35,9 +35,8 @@ $U \widehat{=}$ Menge aller Zahlen die irgendeine Name und Vorname Kombination e
 $S \subseteq U~\widehat{=}$ Name und Vorname in Stuttgart $|n|= 500000$  
 Wähle $m=500000$  
 Könnten wir eine Hashfunktion $h:U\rightarrow {0,...,m-1}$ abbildet mit:
-$\forall 0 \leq i < m: ~~|{x\in S | h(x) = i}|\leq \tfrac{n}{m}=1$
-> Das ist toll
-Wir können ein Array anlegen mit 500000 Einträgen. Die Telnr. einer "Name und Vorname" speichern wir an Position h(Name und Vorname), des Arrays.
+$\forall 0 \leq i < m: ~~|{x\in S | h(x) = i}|\leq \tfrac{n}{m}=1$  
+Das ist toll, wir können ein Array anlegen mit 500000 Einträgen. Die Telnr. einer "Name und Vorname" speichern wir an Position h(Name und Vorname), des Arrays.
 
 2) Stowasser (Latein-Deutsch Wörterbuch)  
 $U...$ Menge aller Wörter  

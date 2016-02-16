@@ -8,12 +8,12 @@ Fehlende Stellen / Fehler / Unklarheiten sind mit //TODO markiert. Helfe mit die
 Vergleich mit Kochrezept, manchmal zufällig 1 oder 2 Prisen Salz.
 Abgrenzung zu deterministischen Algorithmen.
 
->Ein randomisierter Algorithmus ist ein ein Algorithmus,  welcher unter Nutzung einer Zufallsquelle (Münzwurf, Zufallszahlengenerator, ...) ein Problem löst:
+Ein randomisierter Algorithmus ist ein ein Algorithmus,  welcher unter Nutzung einer Zufallsquelle (Münzwurf, Zufallszahlengenerator, ...) ein Problem löst:
 
 Man könnte Algo dahingehend analysieren, wie viel Zufall er braucht.
 Echter Zufall z.B. gemessenes physikalisches Rauschen.
 
->Oft sind RA (randomisierte Algorithmen) deutlich einfacher und teilweise auch effizienter als entsprechend deterministische Algorithmen.
+Oft sind RA (randomisierte Algorithmen) deutlich einfacher und teilweise auch effizienter als entsprechend deterministische Algorithmen.
 Typischerweise analysiert man Algorithmen bzgl. Platz und Zeitbedarf, RA kann man auch bzgl. "verbrauch von Zufall" analysieren (machen wir wahrscheinlich nicht).
 
 
@@ -22,7 +22,7 @@ Gegeben: $n$ Punkte in $\mathbb{R}^2$
 
 //TODO Bild einfügen
 
-Gesucht: $P1, P2 \in$ P mit $|p_1 p_1 |$ minimal
+Gesucht: $P_1, P_2 \in P$ mit $|p_1, p_2|$ minimal
 
 **Naive Lösungsidee:**
 
@@ -56,9 +56,10 @@ CP kann deterministisch in $\mathcal{O}($ log $n)$ Zeit gelöst werden. Man kann
 
 #### Jetzt: RA der Closest Pair in erwartet $\mathcal{O}(n)$ Zeit löst.
 
-_%%FEHLER IN ABSATZ_
+X sei eine Zufallsvariable.  
+Der Erwartungswert einer diskreten Zufallsvariable ist $E(X) = \sum_i i \cdot Pr(X = i)$.
 
-Wir entwerfe einen Alg., dessen Laufzeit als Zufallsvariable $X$ dargestallt werden kann.
+Wir entwerfe einen Algortihmus, dessen Laufzeit als Zufallsvariable $X$ dargestallt werden kann.
 Bei Eingangsgröße $n$ gilt $E(X)$ = $\mathcal{O} (n)$
 
 ### Ein inkrementeller Algorithmus für CP
